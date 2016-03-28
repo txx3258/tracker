@@ -17,18 +17,16 @@ unsigned int APHash(char* str,unsigned int len);
 void hashkeys(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = Isolate::GetCurrent();
   HandleScope scope(isolate);
-
-  String::utf8Value str(args[0]);
-  char* key = *str;
+  String::Utf8Value str(args[0]);
   int len=args[1]->NumberValue();
+  char* key=*str;
   
-  Local<Array> nodes = Number::New(isolate, value);
-
+  Local<Array> nodes = Array::New(isolate,len);
   Local<Number> no1=Number::New(isolate, JSHash(key,len));
-	Local<Number> no4=Number::New(isolate, RSHash(key,len));
-	Local<Number> no3=Number::New(isolate, APHash(key,len));
-	Local<Number> no2=Number::New(isolate, ELFHash(key,len));
-
+  Local<Number> no3=Number::New(isolate, APHash(key,len));
+  Local<Number> no2=Number::New(isolate, ELFHash(key,len));
+  Local<Number> no4=Number::New(isolate, RSHash(key,len));
+  
   nodes->Set(0, no1);
   nodes->Set(1, no2);
   nodes->Set(2, no3);

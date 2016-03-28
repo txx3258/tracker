@@ -21,7 +21,7 @@ void hashkeys(const FunctionCallbackInfo<Value>& args) {
   int len=args[1]->NumberValue();
   char* key=*str;
   
-  Local<Array> nodes = Array::New(isolate,len);
+  Local<Array> nodes = Array::New(isolate,4);
   Local<Number> no1=Number::New(isolate, JSHash(key,len));
   Local<Number> no3=Number::New(isolate, APHash(key,len));
   Local<Number> no2=Number::New(isolate, ELFHash(key,len));

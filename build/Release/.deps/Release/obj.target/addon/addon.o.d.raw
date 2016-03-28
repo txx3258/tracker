@@ -1,0 +1,6 @@
+Release/obj.target/addon/addon.o: ../addon.cc \
+  /Users/soft_tangxiaoxian/.node-gyp/4.2.4/include/node/node.h \
+  /Users/soft_tangxiaoxian/.node-gyp/4.2.4/include/node/v8.h \
+  /Users/soft_tangxiaoxian/.node-gyp/4.2.4/include/node/v8-version.h \
+  /Users/soft_tangxiaoxian/.node-gyp/4.2.4/include/node/v8config.h \
+  /Users/soft_tangxiaoxian/.node-gyp/4.2.4/include/node/node_version.h

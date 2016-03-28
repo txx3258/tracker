@@ -1,0 +1,17 @@
+{
+  "name": "tracker",
+  "version": "0.0.1",
+  "description": "track user vistor path",
+  "main": "addon.js",
+  "private": true,
+  "dependencies": {
+    "bindings": "~1.2.1",
+    "nan": "~1.3.0",
+    "log4js":"~0.6.33",
+    "redis":"~2.6.0-0"
+  },
+  "scripts": {
+    "test": "node addon.js"
+  },
+  "gypfile": true
+}

@@ -1,0 +1,137 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@3.6.0
+3 info using node@v4.2.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune tracker@0.0.1
+20 silly idealTree:prePrune ├── bindings@1.2.1
+20 silly idealTree:prePrune ├── core-util-is@1.0.2
+20 silly idealTree:prePrune ├── double-ended-queue@2.1.0-0
+20 silly idealTree:prePrune ├── inherits@2.0.1
+20 silly idealTree:prePrune ├── isarray@0.0.1
+20 silly idealTree:prePrune ├── log4js@0.6.33
+20 silly idealTree:prePrune ├── nan@1.3.0
+20 silly idealTree:prePrune ├── readable-stream@1.0.33
+20 silly idealTree:prePrune ├── redis-commands@1.1.0
+20 silly idealTree:prePrune ├── redis-parser@1.3.0
+20 silly idealTree:prePrune ├── redis@2.6.0-0
+20 silly idealTree:prePrune ├── semver@4.3.6
+20 silly idealTree:prePrune └── string_decoder@0.10.31
+21 silly loadIdealTree Finishing
+22 silly currentTree tracker@0.0.1
+22 silly currentTree ├── bindings@1.2.1
+22 silly currentTree ├── core-util-is@1.0.2
+22 silly currentTree ├── double-ended-queue@2.1.0-0
+22 silly currentTree ├── inherits@2.0.1
+22 silly currentTree ├── isarray@0.0.1
+22 silly currentTree ├── log4js@0.6.33
+22 silly currentTree ├── nan@1.3.0
+22 silly currentTree ├── readable-stream@1.0.33
+22 silly currentTree ├── redis-commands@1.1.0
+22 silly currentTree ├── redis-parser@1.3.0
+22 silly currentTree ├── redis@2.6.0-0
+22 silly currentTree ├── semver@4.3.6
+22 silly currentTree └── string_decoder@0.10.31
+23 silly idealTree tracker@0.0.1
+23 silly idealTree ├── bindings@1.2.1
+23 silly idealTree ├── core-util-is@1.0.2
+23 silly idealTree ├── double-ended-queue@2.1.0-0
+23 silly idealTree ├── inherits@2.0.1
+23 silly idealTree ├── isarray@0.0.1
+23 silly idealTree ├── log4js@0.6.33
+23 silly idealTree ├── nan@1.3.0
+23 silly idealTree ├── readable-stream@1.0.33
+23 silly idealTree ├── redis-commands@1.1.0
+23 silly idealTree ├── redis-parser@1.3.0
+23 silly idealTree ├── redis@2.6.0-0
+23 silly idealTree ├── semver@4.3.6
+23 silly idealTree └── string_decoder@0.10.31
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 silly generateActionsToTake Finishing
+27 silly diffTrees action count 0
+28 silly decomposeActions action count 0
+29 silly executeActions Starting
+30 silly install executeActions
+31 silly doSerial global-install 0
+32 silly doParallel fetch 0
+33 verbose correctMkdir /Users/soft_tangxiaoxian/.npm/_locks correctMkdir not in flight; initializing
+34 verbose lock using /Users/soft_tangxiaoxian/.npm/_locks/staging-29d2529c456f61f3.lock for /Users/soft_tangxiaoxian/Desktop/tmp/tracker/node_modules/.staging
+35 silly doParallel extract 0
+36 silly doParallel preinstall 0
+37 silly doReverseSerial remove 0
+38 silly doSerial move 0
+39 silly doSerial finalize 0
+40 silly doSerial build 0
+41 silly doSerial global-link 0
+42 silly doParallel update-linked 0
+43 silly doSerial install 0
+44 silly doSerial postinstall 0
+45 verbose unlock done using /Users/soft_tangxiaoxian/.npm/_locks/staging-29d2529c456f61f3.lock for /Users/soft_tangxiaoxian/Desktop/tmp/tracker/node_modules/.staging
+46 silly executeActions Finishing
+47 silly rollbackFailedOptional Starting
+48 silly rollbackFailedOptional Finishing
+49 silly runTopLevelLifecycles Starting
+50 silly install runTopLevelLifecycles
+51 silly preinstall tracker@0.0.1 /Users/soft_tangxiaoxian/Desktop/tmp/tracker/tracker-05afe6df
+52 info lifecycle tracker@0.0.1~preinstall: tracker@0.0.1
+53 silly lifecycle tracker@0.0.1~preinstall: no script for preinstall, continuing
+54 silly build tracker@0.0.1
+55 info linkStuff tracker@0.0.1
+56 silly linkStuff tracker@0.0.1 has /Users/soft_tangxiaoxian/Desktop/tmp as its parent node_modules
+57 verbose linkBins tracker@0.0.1
+58 verbose linkMans tracker@0.0.1
+59 silly install tracker@0.0.1 /Users/soft_tangxiaoxian/Desktop/tmp/tracker/tracker-05afe6df
+60 info lifecycle tracker@0.0.1~install: tracker@0.0.1
+61 verbose lifecycle tracker@0.0.1~install: unsafe-perm in lifecycle true
+62 verbose lifecycle tracker@0.0.1~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/soft_tangxiaoxian/Desktop/tmp/tracker/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/soft_tangxiaoxian/Desktop/tools/gradle-2.4/bin:/Users/soft_tangxiaoxian/Desktop/tools/android-sdk-macosx/tools:/Users/soft_tangxiaoxian/Desktop/tools/android-sdk-macosx/platform-tools:/Users/soft_tangxiaoxian/Desktop/tools/gradle-2.4/bin:/Users/soft_tangxiaoxian/Desktop/tools/android-sdk-macosx/tools:/Users/soft_tangxiaoxian/Desktop/tools/android-sdk-macosx/platform-tools
+63 verbose lifecycle tracker@0.0.1~install: CWD: /Users/soft_tangxiaoxian/Desktop/tmp/tracker
+64 silly lifecycle tracker@0.0.1~install: Args: [ '-c', 'node-gyp rebuild' ]
+65 silly lifecycle tracker@0.0.1~install: Returned: code: 1  signal: null
+66 info lifecycle tracker@0.0.1~install: Failed to exec install script
+67 verbose stack Error: tracker@0.0.1 install: `node-gyp rebuild`
+67 verbose stack Exit status 1
+67 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
+67 verbose stack     at emitTwo (events.js:87:13)
+67 verbose stack     at EventEmitter.emit (events.js:172:7)
+67 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+67 verbose stack     at emitTwo (events.js:87:13)
+67 verbose stack     at ChildProcess.emit (events.js:172:7)
+67 verbose stack     at maybeClose (internal/child_process.js:818:16)
+67 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+68 verbose pkgid tracker@0.0.1
+69 verbose cwd /Users/soft_tangxiaoxian/Desktop/tmp/tracker
+70 error Darwin 15.2.0
+71 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+72 error node v4.2.4
+73 error npm  v3.6.0
+74 error code ELIFECYCLE
+75 error tracker@0.0.1 install: `node-gyp rebuild`
+75 error Exit status 1
+76 error Failed at the tracker@0.0.1 install script 'node-gyp rebuild'.
+76 error Make sure you have the latest version of node.js and npm installed.
+76 error If you do, this is most likely a problem with the tracker package,
+76 error not with npm itself.
+76 error Tell the author that this fails on your system:
+76 error     node-gyp rebuild
+76 error You can get information on how to open an issue for this project with:
+76 error     npm bugs tracker
+76 error Or if that isn't available, you can get their info via:
+76 error     npm owner ls tracker
+76 error There is likely additional logging output above.
+77 verbose exit [ 1, true ]

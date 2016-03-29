@@ -19,7 +19,7 @@ log4js.configure({
       "category":"sys"
     }
   ]
-});
+},{});
 
 let logSys=log4js.getLogger('sys'); 
 
@@ -36,6 +36,7 @@ function conn(){
     setTimeout(conn,5000);
   });
 }
+conn();
 
 /**
  *建立http服务器
@@ -46,24 +47,29 @@ let server=http.createServer(function(req,res){
   logSys.info(url);
 
   let cid=URL.parse(req.url).query;
-  let keys=addon.hashkeys(cid,cid.length);  
-  
-  let Keys=keys.map(function(item){
-    return ['setbit',"boomfilter",item,1];
-  });
-
-  if (!client){
-    res.writeHead(500,{}).end('redis is null');
+  let len=undefined;
+  if (!cid||(len=cid.length)<1){
+    res.writeHead(500,{});
+    res.end('cid is null');
     return;
   }
+
+  let keys=addon.hashkeys(cid,cid.length);  
   
-  Keys.forEach(function(item){
+  if (!client){
+    res.writeHead(500,{});
+    res.end('redis is null');
+    return;
+  }
+	  
+  let multi=client.multi();
+
+  keys.forEach(function(item){
      multi.setbit('bloomfilter',item,1); 
   });
 
-  multi=client.multi();
   multi.exec(function(err,reply){
-    if (!err){
+    if (err){
       print("{'success':false,'cid':"+cid+"}");
     }else{
       print("{'success':true,'cid':''}")

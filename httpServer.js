@@ -13,7 +13,7 @@ log4js.configure({
   appenders:[
     {
       "type":"file",
-      "filename":"./logs/server.log"
+      "filename":"./logs/server.log",
       "maxLogSize":CONF.maxLogSize,
       "backups":2,
       "category":"sys"

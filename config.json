@@ -1,7 +1,7 @@
 {
   "maxLogSize":10000,
-  "REDIS_PORT":27127,
-  "REDIS_IP":"127.0.0.1",
+  "REDIS_PORT":6379,
+  "REDIS_IP":"192.168.11.239",
   "REDIS_CONF":{},
   "HTTP_PORT":7899
 }
